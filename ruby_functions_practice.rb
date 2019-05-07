@@ -40,10 +40,6 @@ def number_to_short_month_name(month)
   return Date::MONTHNAMES[month].slice(0..2)
 end
 
-def substring(month)
-  return number_to_short_month_name(month)
-end
-
 def volume_of_cube(side_length)
   return side_length ** 3
 end
