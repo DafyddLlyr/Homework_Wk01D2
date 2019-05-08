@@ -1,7 +1,6 @@
 require( 'minitest/autorun' )
 require( 'minitest/rg' )
 require_relative( '../ruby_functions_practice' )
-require("Date")
 
 class FunctionsTest < MiniTest::Test
 
@@ -94,8 +93,8 @@ class FunctionsTest < MiniTest::Test
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    result = fahrenheit_to_celsius(40)
-    assert_equal(4.44, result)
+    celsius = fahrenheit_to_celsius(40)
+    assert_equal(4.44, celsius)
   end
 
 

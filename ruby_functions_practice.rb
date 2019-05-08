@@ -21,7 +21,7 @@ def divide(num_1, num_2)
 end
 
 def length_of_string(string)
-  return string.length
+  return string.length()
 end
 
 def join_string(string_1, string_2)
@@ -32,12 +32,12 @@ def add_string_as_number(string_1, string_2)
   return string_1.to_i() + string_2.to_i()
 end
 
-def number_to_full_month_name(month)
-  return Date::MONTHNAMES[month]
+def number_to_full_month_name(number)
+  return Date::MONTHNAMES[number]
 end
 
-def number_to_short_month_name(month)
-  return Date::MONTHNAMES[month].slice(0..2)
+def number_to_short_month_name(number)
+  return Date::MONTHNAMES[number][0..2]
 end
 
 def volume_of_cube(side_length)
@@ -49,5 +49,6 @@ def volume_of_sphere(radius)
 end
 
 def fahrenheit_to_celsius(farenheit)
-  return ((farenheit - 32) * (5.0/9.0)).round(2)
+  celsius = (farenheit - 32.0) * (5.0/9.0)
+  return celsius.round(2)
 end
